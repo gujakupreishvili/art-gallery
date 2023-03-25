@@ -367,4 +367,9 @@ footer{
   .facebook{
     padding-right: 165px;
   }
+  .div-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
 }
