@@ -1,0 +1,370 @@
+
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden ;
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+.image-hero{
+  width: 100%;
+}
+.header-info{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+
+}
+.h1-header{
+  font-size: 60px;
+  line-height: 55px;
+  font-weight: 900;
+  font-family: Big Shoulders Display;
+  color: #151515;
+}
+.p-header{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  font-family:Outfit;
+  color: #444444;
+  width: 343px;
+}
+.button-header{
+  display: flex;
+  flex-direction: row;
+}
+.location-button{
+  width: 204px;
+  height: 74px;
+  background-color: #151515;
+  color: white;
+  font-size: 20px;
+  font-family: Big Shoulders Display;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-button a{
+  text-decoration: none;
+  color: white;
+}
+.location-button:active{
+  background-color: #D5966C;
+}
+.img-button{
+  background-color: #D5966C;
+  border: none;
+  width: 56px;
+  height: 74px;
+}
+.img-button:active{
+  background-color: #151515;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  /* align-items: center; */
+   
+}
+.main-photo{
+  width: 343px;
+  height: 320px;
+  margin: 16px;
+  margin-top: 110px;
+}
+.h2-main-text{
+  font-size: 50px;
+  font-weight: 900;
+  font-family: Big Shoulders Display;
+  line-height: 45px;
+  margin-left: 16px;
+  width: 343px;
+}
+.p-main-text{
+  width: 343px;
+  font-size: 18px;
+  font-family: Outfit;
+  color: #444444;
+  line-height: 28px;
+  margin-left: 16px;
+}
+.photos-div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.interier-img{
+  width: 343px;
+  height: 480px;
+}
+.photo-text{
+  display: flex;
+  flex-direction: column;
+}
+.img-showroom{
+  width: 343px;
+  height: 200px;
+  margin-top: 10px;
+}
+.main-text{
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  width: 343px;
+  height: 293px;
+  background-color: black;
+  color: white;
+  margin-top: 16px;
+}
+.text-h2{
+  font-family: Big Shoulders Display;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  padding-left: 24px;
+  padding-top: 48px;
+}
+.text-p{
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 24px;
+}
+footer{
+  width: 100%;
+}
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  background-color:#151515;
+  width: 100%;
+  height: 340px;
+  margin-top: 120px;
+  color: white;
+  gap: 38px;
+}
+.footer-h3{
+  font-family: Big Shoulders Display ;
+  font-size: 25px;
+  padding-left: 32px;
+  padding-top: 25px;
+}
+.footer-p{
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 311px;
+}
+.facebook{
+  display: flex;
+  flex-direction: row;
+  margin-left: 32px;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+.image-hero-tablet{
+  display: none;
+}
+.main-photo-tablet{
+  display: none;
+}
+.interier-img-tablet{
+  display: none;
+}
+.img-showroom-tablet{
+  display: none;
+}
+.image-hero-desktop{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 32%;
+}
+.main-photo-desktop{
+  display: none;
+}
+.interier-img-desktop{
+  display: none;
+}
+.img-showroom-desktop{
+  display: none;
+}
+@media(min-width:740px){
+  .image-hero{
+    display: none;
+  }
+  .image-hero-tablet{
+    display: block;
+  }
+  header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+     
+  }
+  .header-info{
+    position: absolute;
+    left: 39%;
+    top:12%
+  }
+  .firts-main-div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding-left: 32px;
+    
+  }
+  .main-photo{
+    display: none;
+  }
+  .main-photo-tablet{
+    display: block;
+  }
+  .h2-main-text{
+    width: 223px;
+  }
+  .interier-img{
+    display: none;
+  }
+  .interier-img-tablet{
+    display: block;
+  }
+  .img-showroom{
+    display: none;
+  }
+  .img-showroom-tablet{
+    display: block;
+  }
+  .photos-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11px;
+  }
+  .text{
+    width: 280px;
+    height: 390px;
+  }
+  .footer-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-h3{
+    margin-top:-5px;
+  }
+  .footer-p{
+    margin-left: -100px;
+  }
+  .facebook{
+    margin-right: 70px;
+  }
+  .image-hero-desktop{
+    display: none;
+  }
+
+}
+@media(min-width:1024px){
+  .image-hero-desktop{
+    display: block;
+  }
+  .image-hero-tablet{
+    display: none;
+  }
+  header{
+    position: relative;
+  }
+  .desktop-black-rect{
+    background-color: #151515;
+    width: 420px;
+    height: 799px;
+  }
+
+  .h1-header{
+    background-image: linear-gradient(90deg, white 65%,black 35%);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent;
+    top: 138%;
+    left: -845%;
+    position: absolute;
+  }
+  .p-header{
+    position: absolute;
+    left: 1271%;
+    top: 206%;
+  }
+  .button-header{
+    position: absolute;
+    top: 933%;
+    left: 1194%;
+  }
+  .main-photo-tablet{
+    display: none;
+  }
+  .main-photo-desktop{
+    display: block;
+  }
+  .firts-main-div{
+    margin-top: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .h2-main-text{
+    width: 350px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .p-main-text{
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .interier-img-tablet{
+    display: none;
+  }
+  .interier-img-desktop{
+    display: block;
+    
+  }
+  .img-showroom-tablet{
+    display: none;
+  }
+  .img-showroom-desktop{
+    display: block;
+  }
+  .text{
+    width: 445px;
+  }
+  .text-h2{
+    width: 350px;
+    line-height: 60px;
+  }
+  .text-p{
+    width: 350px;
+    line-height: 32px;
+  }
+  .footer-h3{
+    padding-left: 165px;
+  }
+  .facebook{
+    padding-right: 165px;
+  }
+}
